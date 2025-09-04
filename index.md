@@ -2,7 +2,7 @@
 
 ## 事前準備
 
-[こちらのページ](https://classroom.github.com/a/CdjZx1Eb)から、ソースコードを`C:¥sys_dev_exe`へcloneしてください。
+[こちらのページ](https://classroom.github.com/a/1lWGY6hv)から、ソースコードを`C:¥sys_dev_exe`へcloneしてください。
 
 ## 本章の狙い
 
