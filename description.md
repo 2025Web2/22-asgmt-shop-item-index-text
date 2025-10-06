@@ -76,7 +76,7 @@ Route::post('item', [ItemController::class, 'index'])->name('item.index');
 第2引数には、コントローラを指定します。
 こちらは、[モデル、コントローラ](https://2025web2.github.io/02-model-controller/)の章で説明しているので割愛します。
 
-`->name('items.index')`:<br>
+`->name('item.index')`:<br>
 `->name`メソッドは、ルートに名前を付けるためのメソッドです。
 これがビューなどからルートを参照する際に、URLを直接記述するのではなく、名前を使って参照することができるようになります。
 この課題で初めてその恩恵を受けることができます。
@@ -85,7 +85,7 @@ Route::post('item', [ItemController::class, 'index'])->name('item.index');
 
 次に、ジャンル選択画面(`resources/views/index.blade.php`)を修正します。
 
-先ほど述べた`->name('items.index')`の恩恵を受けましょう！
+先ほど述べた`->name('item.index')`の恩恵を受けましょう！
 ルーティングにつけた名前を使い、`<form>`タグの`action`属性を以下のように修正してください。
 {% raw %}
 ```php
@@ -111,7 +111,7 @@ Route::post('item', [ItemController::class, 'index'])->name('item.index');
 
 `<form method="POST" action="{{ route('item.index') }}">`:<br>
 `<form>`タグの`action`属性には、ルーティングにつけた名前を指定します。
-ルーティングの名前を使用する関数として、ここでは`route`関数を使い、`items.index`という名前のルートを指定しています。
+ルーティングの名前を使用する関数として、ここでは`route`関数を使い、`item.index`という名前のルートを指定しています。
 なお、ビューで関数を使用する場合は、`{{ }}`で囲む必要があります。
 {% endraw %}
 
